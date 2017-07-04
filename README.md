@@ -1,4 +1,4 @@
-General-Solution
-================
+Infrastructure library
+======================
 
 general library for personal use
