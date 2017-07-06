@@ -11,13 +11,11 @@ namespace Infrastructure.Common
 		/// <summary>
 		/// 创建流水号，序号等
 		/// </summary>
-		/// <param name="length">要创建的字符串长度。不能大于20。</param>
+		/// <param name="length">要创建的字符串长度。</param>
 		/// <returns></returns>
 		public static string GenerateUniqueStringOfLength(int length)
 		{
 			return string.Empty;
 		}
-
-
 	}
 }

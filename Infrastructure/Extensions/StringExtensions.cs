@@ -8,6 +8,11 @@ namespace Infrastructure.Extensions
 {
 	public static class StringExtensions
 	{
+		public static byte[] ToBytes(this string text, Encoding encoding)
+		{
+			return encoding.GetBytes(text);
+		}
+
 		public static bool IsEmail(this string text)
 		{
 			return false;
