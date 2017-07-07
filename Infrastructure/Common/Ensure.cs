@@ -1,21 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Globalization;
 using System.Resources;
-using System.Text;
-using System.Threading.Tasks;
+using System.Threading;
 
 namespace Infrastructure.Common
 {
 	public class Ensure
 	{
-		private static readonly string ARGUMENTNULLEMPTY = "Argument is null or empty.";
+		private static readonly CultureInfo currentCulture = Thread.CurrentThread.CurrentUICulture;
+		private static readonly string ARGUMENTNULLEMPTY = "ArgumentNullOrEmptyError";
+		private static readonly ResourceManager resourceMgr;
 
+		static Ensure()
+		{
+			resourceMgr = StaticResource.StaticResource.ResourceManager;
+		}
+		
 		public static void IsNotNullOrEmpty(string text)
 		{
 			if(string.IsNullOrEmpty(text) || string.IsNullOrWhiteSpace(text))
 			{
-				throw new ArgumentNullException(nameof(text), ARGUMENTNULLEMPTY);
+				throw new ArgumentNullException(nameof(text), resourceMgr.GetString(ARGUMENTNULLEMPTY, currentCulture));
 			}
 		}
 	}
