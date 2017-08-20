@@ -117,7 +117,16 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ArgumentCannotBeGreaterThanBaseline" xml:space="preserve">
+    <value>The specified argument {0} cannot be greater than its ceiling value of {1}.</value>
+  </data>
+  <data name="ArgumentNullError" xml:space="preserve">
+    <value>Argument is null.</value>
+  </data>
   <data name="ArgumentNullOrEmptyError" xml:space="preserve">
     <value>Argument is null or empty.</value>
+  </data>
+  <data name="InvalidPositiveNumber" xml:space="preserve">
+    <value>Argument is not a positive number.</value>
   </data>
 </root>

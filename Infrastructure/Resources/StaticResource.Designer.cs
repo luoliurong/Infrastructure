@@ -61,11 +61,38 @@ namespace Infrastructure.StaticResource {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 参数为空。.
+        ///   Looks up a localized string similar to 参数 {0}不能超过上限值 {1}。.
+        /// </summary>
+        public static string ArgumentCannotBeGreaterThanBaseline {
+            get {
+                return ResourceManager.GetString("ArgumentCannotBeGreaterThanBaseline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 参数为NULL。.
+        /// </summary>
+        public static string ArgumentNullError {
+            get {
+                return ResourceManager.GetString("ArgumentNullError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 参数为NULL或者空。.
         /// </summary>
         public static string ArgumentNullOrEmptyError {
             get {
                 return ResourceManager.GetString("ArgumentNullOrEmptyError", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 参数不为正整数。.
+        /// </summary>
+        public static string InvalidPositiveNumber {
+            get {
+                return ResourceManager.GetString("InvalidPositiveNumber", resourceCulture);
             }
         }
     }

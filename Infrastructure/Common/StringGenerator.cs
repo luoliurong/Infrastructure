@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastructure.Common
 {
@@ -15,6 +11,9 @@ namespace Infrastructure.Common
 		/// <returns></returns>
 		public static string GenerateUniqueStringOfLength(int length)
 		{
+			Ensure.IsPositiveNumber(length);
+			var stringLength = Convert.ToInt32(length);
+			var currentTimeTicks = DateTime.Now.Ticks.ToString();
 			return string.Empty;
 		}
 	}

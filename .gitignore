@@ -12,3 +12,9 @@
 *.TMP
 *.dll
 Infrastructure.Test/obj/Debug/TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs
+*.pdb
+/Infrastructure.Test/bin/Debug/Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+/Infrastructure/bin/Debug/Infrastructure.dll.CodeAnalysisLog.xml
+/Infrastructure/bin/Debug/Infrastructure.dll.lastcodeanalysissucceeded
+/Infrastructure.Test/obj/Debug/Infrastructure.Test.csproj.FileListAbsolute.txt
+/Infrastructure/obj/Debug/Infrastructure.csproj.FileListAbsolute.txt

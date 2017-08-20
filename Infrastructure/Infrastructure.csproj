@@ -46,6 +46,15 @@
     <Compile Include="Constants.cs" />
     <Compile Include="Extensions\DateTimeExtension.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="FaultHandling\AsyncExecution.cs" />
+    <Compile Include="FaultHandling\ExponentialBackOffInterval.cs" />
+    <Compile Include="FaultHandling\FixedInterval.cs" />
+    <Compile Include="FaultHandling\IFaultDetectionStrategy.cs" />
+    <Compile Include="FaultHandling\IncrementalInterval.cs" />
+    <Compile Include="FaultHandling\RetryingEventArgs.cs" />
+    <Compile Include="FaultHandling\RetryLimitExceededException.cs" />
+    <Compile Include="FaultHandling\RetryPolicy.cs" />
+    <Compile Include="FaultHandling\RetryStrategy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Security\AESEncryption.cs" />
     <Compile Include="Security\DESEncryption.cs" />
@@ -66,7 +75,7 @@
     <EmbeddedResource Include="Resources\StaticResource.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>StaticResource.Designer.cs</LastGenOutput>
-      <CustomToolNamespace>Infrastructure.StaticResource.cn-ZH</CustomToolNamespace>
+      <CustomToolNamespace>Infrastructure.StaticResource</CustomToolNamespace>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\StaticResource.en-US.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
